@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'sanctum',  // Используйте Sanctum для API аутентификации
+            'provider' => 'users',
+        ],
     ],
 
     /*

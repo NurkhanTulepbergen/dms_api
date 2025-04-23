@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Manager;
+namespace App\Http\Controllers\Web\Manager;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Manager\Request;
 use App\Models\Booking;
 use App\Models\Building;
 use App\Models\News;

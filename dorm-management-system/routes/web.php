@@ -1,20 +1,20 @@
 <?php
-
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\AdminUserController;
-use App\Http\Controllers\Admin\NewsAdminController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\DocumentController;
-use App\Http\Controllers\Employee\EmployeeController;
-use App\Http\Controllers\GymBookingController;
-use App\Http\Controllers\LanguageController;
+/*
 use App\Http\Controllers\MaintenanceController;
-use App\Http\Controllers\Manager\ManagerController;
-use App\Http\Controllers\Manager\NewsManagerController;
 use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\RequestController;
-use App\Http\Controllers\Student\StudentController;
+use App\Http\Controllers\Web\Admin\AdminController;
+use App\Http\Controllers\Web\Admin\AdminUserController;
+use App\Http\Controllers\Web\Admin\NewsAdminController;
+use App\Http\Controllers\Web\AuthController;
+use App\Http\Controllers\Web\BookingController;
+use App\Http\Controllers\Web\DocumentController;
+use App\Http\Controllers\Web\Employee\EmployeeController;
+use App\Http\Controllers\Web\GymBookingController;
+use App\Http\Controllers\Web\LanguageController;
+use App\Http\Controllers\Web\Manager\ManagerController;
+use App\Http\Controllers\Web\Manager\NewsManagerController;
+use App\Http\Controllers\Web\RequestController;
+use App\Http\Controllers\Web\Student\StudentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -95,4 +95,4 @@ Route::middleware(['auth','role:student'])->prefix('student')->group(function ()
 });
     Route::middleware(['language'])->group(function (){
         Route::post('/language-switch', [LanguageController::class, 'languageSwitch'])->name('language.switch');
-    });
+    });*/

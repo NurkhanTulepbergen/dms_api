@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Web;
 
+use App\Http\Controllers\Controller;
 use App\Models\Employee;
 use App\Models\Request as RepairRequest;
 use Illuminate\Http\Request;
@@ -43,12 +44,12 @@ class RequestController extends Controller{
 
         return view('request.show', compact('request'));
     }
-    public function edit($id){
-//        dd($repairRequest);
-        $employees = Employee::all();
-        $repairRequest = RepairRequest::findOrFail($id);
-        return view('request.edit', compact('repairRequest', 'employees'));
-    }
+        public function edit($id){
+    //        dd($repairRequest);
+            $employees = Employee::all();
+            $repairRequest = RepairRequest::findOrFail($id);
+            return view('request.edit', compact('repairRequest', 'employees'));
+        }
 
     public function update(Request $request, RepairRequest $repairRequest)
     {

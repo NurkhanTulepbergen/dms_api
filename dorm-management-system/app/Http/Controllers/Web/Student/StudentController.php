@@ -1,20 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\Student;
+namespace App\Http\Controllers\Web\Student;
 
+use App\Http\Controllers\Controller;
+use App\Models\Building;
 use App\Models\Document;
 use App\Models\Employee;
 use App\Models\GymBooking;
+use App\Models\News;
 use App\Models\Recovery;
 use App\Models\Request as RepairRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Controllers\Controller;
-use App\Models\News;
-use App\Models\Building; // Добавляем модель корпусов
+
+// Добавляем модель корпусов
 
 class StudentController extends Controller
 {
@@ -107,6 +108,7 @@ class StudentController extends Controller
 
         return back()->with('success', 'Данные успешно обновлены!');
     }
+
 
 
 

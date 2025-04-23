@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Employee;
+namespace App\Http\Controllers\Web\Employee;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Hash;
